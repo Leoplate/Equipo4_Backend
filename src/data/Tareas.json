@@ -1,0 +1,12 @@
+[
+  {"id": 1,
+   "Descripción": "Programacion",
+   "Habilitado": true},
+   {"id": 2,
+   "Descripción": "Analisis Funcional",
+   "Habilitado": true},
+   {"id": 3,
+   "Descripción": "Scrum",
+   "Habilitado": true} 
+   
+]
