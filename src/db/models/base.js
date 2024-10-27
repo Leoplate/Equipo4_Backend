@@ -30,7 +30,8 @@ module.exports = (sequelize, DataTypes) => {
   Base.init({
     id_usuario: DataTypes.INTEGER,
     id_tarea: DataTypes.INTEGER,
-    id_estado: DataTypes.INTEGER
+    id_estado: DataTypes.INTEGER,
+    
   }, {
     sequelize,
     modelName: 'Base',

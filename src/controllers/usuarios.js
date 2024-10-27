@@ -1,7 +1,7 @@
 const { Usuarios } = require("../db/models")
 
 const  obtenerUsuario = async (req , res) => {
-    const usuarios = await Usuarios.findAll({});
+    const usuarios = await Usuarios.findAll({order: [['id', 'ASC']]});
       if(!usuarios){return res.status(400).json({mensaje: "No existen Usuarios"})}
         res.status(200).json(usuarios);
 

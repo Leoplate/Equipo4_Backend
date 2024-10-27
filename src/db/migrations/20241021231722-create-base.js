@@ -24,18 +24,16 @@ module.exports = {
       id_estado: {
         type: Sequelize.INTEGER,
         references: {
-          model:'Estado'
+          model:'Estados'
         }
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-        timestamps: false
+        type: Sequelize.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-        timestamps: true
+        type: Sequelize.DATE
       }
     });
   },

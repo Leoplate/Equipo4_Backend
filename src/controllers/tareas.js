@@ -2,8 +2,9 @@
 const {Tareas} = require("../db/models");
 
 const allTareas = async (req , res) => {
-    const Base = await Tareas.findAll({});
-    res.status(200).json(Base);
+    const Base = await Tareas.findAll({order: [['id', 'ASC']]});
+     if(Base){res.status(200).json(Base);}
+     else{res.status(400).json({mensaje: "No existen Tareas"})}  
 
 }
 
